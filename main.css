@@ -11,3 +11,30 @@ p {
     color: lightgray;
     text-align: center;
 }
+
+
+/* Large viewport (500px and up) */
+@media screen and (min-width: 500px) {
+/*    .GMSWC-brand { visibility: hidden; }
+    .GMSWC-expanded-brand { visibility: visible; }
+*/
+    .GMWSC-brand span {
+	display: none;
+    }
+    .GMSWC-brand:after {
+	content: " - Green Mountain Social Work Club";
+    }
+}
+
+/* Small viewport (Less than 499px) */
+@media screen and (max-width: 499px) {
+/*    .GMSWC-brand { visibility: visible; }
+    .GMSWC-expanded-brand { visibility: hidden; }
+*/
+    .GMSWC-brand span {
+	display: none;
+    }
+    .GMSWC-brand:after {
+	content: "GMSWC"
+    }
+}
